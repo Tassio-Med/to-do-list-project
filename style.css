@@ -2,3 +2,6 @@
 .completed {
   text-decoration: line-through;
 }
+.color-background{
+  background-color: rgb(128, 128, 128);
+}

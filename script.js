@@ -19,17 +19,17 @@ btn.addEventListener('click', addTask);
 
 /* ---> Mudar a cor <--- */
 
-/*
-let palletColor = document.querySelector('#color-palette');
-let colorSelected = document.querySelector('.selected');
 
-function changeClass(event) {  
-  colorSelected = document.querySelector('.selected');
-  colorSelected.classList.remove('selected');
-  event.target.classList.add('selected');
+let completedTasks = document.getElementsByTagName('li');
+let dadElement = document.querySelector('#lista-tarefas')
+
+function bckgColor(event) {   
+  for (let i = 0; i < completedTasks.length; i += 1){
+    completedTasks[i].classList.remove('color-background');
+    event.target.classList.add('color-background');
+  }
 }
-  palletColor.addEventListener('click', changeClass);  
-*/
+dadElement.addEventListener('click', bckgColor);
 
 
 /* ---> Marcar check <--- */
