@@ -16,3 +16,28 @@ function addTask() {
 
 let btn = document.querySelector('#criar-tarefa');
 btn.addEventListener('click', addTask);
+
+/* ---> Mudar a cor <--- */
+
+/*
+let palletColor = document.querySelector('#color-palette');
+let colorSelected = document.querySelector('.selected');
+
+function changeClass(event) {  
+  colorSelected = document.querySelector('.selected');
+  colorSelected.classList.remove('selected');
+  event.target.classList.add('selected');
+}
+  palletColor.addEventListener('click', changeClass);  
+*/
+
+
+/* ---> Marcar check <--- */
+
+
+let ol = document.querySelector('#lista-tarefas');
+ol.addEventListener('dblclick', function(event) {
+    event.target.classList.toggle('completed');
+  });
+
+
